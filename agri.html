@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Agriculture Business </title>
+</head>
+<body>
+  <h1> welcome to our website </h1>
+
+  {% for s in allAdmins %}
+
+  {{s.User_name}}  <br>
+  {{s.User_ID}}  <br>
+  {{s.password}}  <br>
+
+  {% endfor %}
+
+<br>
+  {% for s in allMachenaries %}
+
+  {{s.Machenaries_name}}  <br>
+  {{s.Machenaries_ID}}  <br>
+  {{s.User_ID}}  <br>
+  {{s.Hire_price}}  <br>
+
+  {% endfor %}
+
+<br>
+  {% for s in allLabourers %}
+
+  {{s.Labourer_info}}  <br>
+  {{s.Labourer_ID}}  <br>
+  {{s.User_ID}}  <br>
+  {{s.Rate}}  <br>
+
+  {% endfor %}
+
+<br>
+
+  {% for s in allCrops %}
+
+  {{s.Crop_name}}  <br>
+  {{s.Crop_ID}}  <br>
+  {{s.Quantity}}  <br>
+
+  {% endfor %}
+
+<br>
+  {% for s in allSeeds %}
+
+  {{s.Seed_name}}  <br>
+  {{s.Seed_ID }}  <br>
+  {{s.Type}}  <br>
+  {{s.Category}}  <br>
+  {{s.Rate}}  <br>
+
+  {% endfor %}
+
+<br>
+  {% for s in allWarehouses %}
+
+  {{s.Warehouse_name}}  <br>
+  {{s.Warehouse_ID}}  <br>
+  {{s.Seed_ID }}  <br>
+  {{s.Crop_ID  }}  <br>
+  {{s.Total_capacity }}  <br>
+  {{s.Fertilizer_ID }}  <br>
+  {{s.User_ID }}  <br>
+
+  {% endfor %}
+
+
+<br>
+  {% for s in allCropallocations %}
+
+  {{s.Warehouse_name }}  <br>
+  {{s.Warehouse_ID}}  <br>
+  {{s.Warehouse_capacity}}  <br>
+  {{s.Crop_quality}}  <br>
+  {{s.Crop_name}}  <br>
+  {{s.Crop_ID}}  <br>
+
+{% endfor %}
+
+<br>
+  {% for s in allFertilizers %}
+
+  {{s.Fertilizer_name}}  <br>
+  {{s.Fertilizer_ID}}  <br>
+  {{s.Fertilizer_rate}}  <br>
+  {{s.Fertilizer_quality}}  <br>
+
+{% endfor %}
+
+</body>
+</html>
